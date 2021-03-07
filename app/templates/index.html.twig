@@ -6,12 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Symfony avec Docker</title>
+    <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 </head>
 <body>
     <h1>Tirage du {{ result.drawn_at|date("l d F") }}</h1>
     <p>Résultat EuroMillions - My million</p>
     {% for re in result.results %}
-        {{ re.value }}
+        {% if 'number' == re.type %}
+            <span class="round">{{ re.value }}</span>
+        {% else %}
+            <span class="star">{{ re.value }}</span>
+        {% endif %}
     {% endfor %}
     <p>My million {{result.addons.0.value }}</p>
 </body>
