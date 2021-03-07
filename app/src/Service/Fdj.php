@@ -36,7 +36,14 @@ class Fdj
 
         } catch(Exception $e) {
 
+            $errorMessage = $e->getMessage();
+            $response = New Response();
+            $response->setContent($errorMessage);
+
+            $response->setStatusCode(Response::HTTP_BAD_REQUEST);
         }
+
+        return $response;
     }   
 
 }
