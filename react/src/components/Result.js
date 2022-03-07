@@ -27,8 +27,7 @@ function Result() {
                 {tirage &&
                     tirage.map(({ type, value }) => (
                         <span>
-                            <li className="circle" key={value}>{value}
-                            </li>
+                            <li className="circle" key={value}>{value}</li>
                             { (type === 'special') ?
                                 <span className='star'>
                                     <svg className="star-svg" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
