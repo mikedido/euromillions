@@ -1,0 +1,40 @@
+.circle {
+    border: 1px solid rgba(0,0,0,.16);
+    height:100px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:100px;
+}
+
+.tirage-list {
+    list-style-type: none;
+}
+
+ul {
+    list-style:none;
+    margin:10px;
+    padding:10px;
+}
+
+li {
+    display:inline; 
+    margin-bottom:15px;/* à adapter */
+    margin:10px;
+    padding:10px;
+}
+
+.star {
+    color: #f29900;
+    fill: #f29900;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -15px;
+    right: 30px;
+}
+
+.star-svg {
+    width: 16px;
+    height: 16px;
+}
