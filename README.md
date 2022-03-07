@@ -7,6 +7,9 @@ A web page to show the Euromillion result.
 ## The project
 
 I decide to build the projet in full javascript. We have an API build with node and the express libray with reactJs as front end.
+
+<img src="pictures/euromillions.png" />
+
 ### Build the project
 
 `docker-compose -f docker-compose.yml build`
