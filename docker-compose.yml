@@ -1,12 +1,15 @@
-version: '3'
+version: '3.7'
 
 services:
   app:
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: symfony
+      context: ./
+      dockerfile: ./docker/app/Dockerfile
     ports:
-    - 81:80
-    volumes:
-    - .:/app/
+      - 3000:3000
+  api:
+    build: 
+      context: ./
+      dockerfile: ./docker/api/Dockerfile
+    ports:
+      - 9000:9000

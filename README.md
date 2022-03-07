@@ -1,15 +1,20 @@
 # Euromillions
 
-A web page that show the Euromillion result.
+A web page to show the Euromillion result.
 
-### install dependencies
 
-`composer install`
 
+## The project
+
+I decide to build the projet in full javascript. We have an API build with node and the express libray with reactJs as front end.
 ### Build the project
 
-`make build`
+`docker-compose -f docker-compose.yml build`
 
 ### Run the project
 
-`make run`
+`docker-compose -f docker-compose.yml up -d`
+
+### Testing
+
+`npm run test`
